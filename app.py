@@ -9,7 +9,7 @@ load_dotenv()
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 co = cohere.Client(COHERE_API_KEY)
 
-df = pd.read_csv("C:\\Users\\thema\\Downloads\\genai_carrental\\test_data (1).csv")
+df = pd.read_csv("test_data.csv")
 df["Predicted Sentiment"] = ""
 df["Extracted Issues"] = ""
 
